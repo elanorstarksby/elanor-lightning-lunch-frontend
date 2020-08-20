@@ -2,14 +2,4 @@ $ln-webpack: true;
 
 @import '@jsluna/style/scss/main.scss';
 
-.header__logo {
-  width: 12rem;
-  vertical-align: middle;
-}
 
-.app__logo {
-  display: block;
-  width: 16rem;
-  margin: $ln-space auto;
-  vertical-align: middle;
-}
