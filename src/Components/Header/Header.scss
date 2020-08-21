@@ -1,4 +1,10 @@
-.header__logo {
-  width: 12rem;
-  vertical-align: middle;
+.header { 
+  &__logo {
+    width: 12rem;
+    vertical-align: middle;
+  }
+  &__search-bar {
+    width: 100%;
+    margin: auto 20px;
+  }
 }
