@@ -1,0 +1,51 @@
+[
+  {
+    "meta": {
+      "totalData": 191,
+      "pageSize": 24,
+      "currentPage": 1,
+      "totalPages": 8
+    },
+    "data": [
+      {
+        "id": "9180945",
+        "type": "product",
+        "attributes": {
+          "productId": "9180945",
+          "name": "BLT Sandwich",
+          "buyable": true,
+          "imageURL": "661-9180945-CEU764T.jpg",
+          "price": 3.49,
+          "specialOfferText": "Meal Deal!",
+          "brand": "Taste The Difference"
+        }
+      },
+      {
+        "id": "9180945",
+        "type": "product",
+        "attributes": {
+          "productId": "9180945",
+          "name": "Cheese and Onion Squares",
+          "buyable": true,
+          "imageURL": "661-9180945-CEU764T.jpg",
+          "price": 2.49,
+          "specialOfferText": "Meal Deal!",
+          "brand": "Walkers"
+        }
+      },
+      {
+        "id": "2506785",
+        "type": "product",
+        "attributes": {
+          "productId": "2506785",
+          "name": "Rubicon Mango",
+          "buyable": true,
+          "imageURL": "661-9180945-CEU764T.jpg",
+          "price": 1.5,
+          "specialOfferText": "Meal Deal!",
+          "brand": "Rubicon"
+        }
+      }
+    ]
+  }
+]

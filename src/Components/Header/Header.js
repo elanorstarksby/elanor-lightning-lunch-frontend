@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { SearchField, withClear } from "@jsluna/form";
 import { SearchButton } from "@jsluna/button";
