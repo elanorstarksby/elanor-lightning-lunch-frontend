@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
-import academyLogo from "../../academy.png";
+
+import { TogetherWeAreSainsburys } from '@jsluna/images'
+import {
+  TextButton,
+  Header as LunaHeader,
+  HeaderLogo,
+  HeaderActions,
+} from '@jsluna/react'
+import { Basket } from '@jsluna/icons'
+
 import "./Header.scss";
 
 class Header extends Component {
@@ -12,20 +21,18 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header">
-        <header className="app__header">
-          <img src={academyLogo} className="app__logo" alt="logo" />
-          <h3>Tech Academy UI - Lightning lunch</h3>
-          <a
-            className="app__link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <LunaHeader>
+        <HeaderLogo>
+          <TogetherWeAreSainsburys className="header__logo" />
+          <span className="ln-u-visually-hidden">Together We Are Sainsburys</span>
+        </HeaderLogo>
+        <HeaderActions align="right" label="Basket">
+          <TextButton className="ln-u-pull-right">
+            <Basket /> 42
+            <span className="ln-u-visually-hidden">Your basket</span>
+          </TextButton>
+        </HeaderActions>
+      </LunaHeader>
     );
   }
 }
