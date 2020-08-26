@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Body1 } from "@jsluna/typography";
 import { Card, Container, Section } from "@jsluna/react";
 import productData from "../productMock.json";
-import academyLogo from "../../academy.png";
 import "./Products.scss";
 const Product = ({ productId }) => {
   const [product, setProduct] = useState(null);
@@ -26,17 +25,13 @@ const Product = ({ productId }) => {
               <img
                 src={`https://assets.sainsburys-groceries.co.uk/gol/${product.id}/1/640x640.jpg`}
                 className="product__image"
-                alt="product-image"
+                alt="product"
               />
               <h1 className="product__title">{product.attributes.name}</h1>
               <Body1 className="product__info">
                 <strong>{product.attributes.price.now}</strong>
                 {product.attributes.description && (
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: product.attributes.description,
-                    }}
-                  />
+                  <p>{product.attributes.description}</p>
                 )}
               </Body1>
             </>
