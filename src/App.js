@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-
+import React, { useState } from "react";
 import Header from "./Components/Header/Header";
 import Product from "./Components/Products/Product";
 
@@ -10,14 +9,17 @@ const App = () => {
   //   });
   // }, []);
 
+  const [newSearchTerm, setSearchTerm] = useState("");
+
   const handleSearch = (searchTerm = "") => {
     if (searchTerm) console.log(searchTerm);
+    setSearchTerm(searchTerm);
   };
 
   return (
     <div className="app">
       <Header handleSearch={handleSearch} />
-      <Product />
+      <Product productId={newSearchTerm} />
     </div>
   );
 };

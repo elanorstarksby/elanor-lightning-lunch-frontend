@@ -16,7 +16,6 @@ import { Basket } from "@jsluna/icons";
 import "./Header.scss";
 
 const ClearableSearchField = withClear(SearchField);
-
 const Header = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 

@@ -1,29 +1,46 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import axios from "axios";
 import { Body1 } from "@jsluna/typography";
 import { Card, Container, Section } from "@jsluna/react";
-
+import productData from "../productMock.json";
 import academyLogo from "../../academy.png";
 import "./Products.scss";
-const Product = () => {
-  // useEffect(() => {
-  //   axios
-  //     .get("ENDPOINT_PLACEHOLDER")
-  //     .then((res) => console.log(res))
-  //     .catch((e) => console.log(e));
-  // }, []);
+const Product = ({ productId }) => {
+  const [product, setProduct] = useState(null);
+
+  useEffect(() => {
+    // axios
+    //   .get(`localhost:8080/products/${productId}`)
+    //   .then((res) => {console.log(res), setProduct(res.data)})
+    //   .catch((e) => console.log(e));
+    if (productId === "7799118") setProduct(productData.data);
+    else setProduct(null);
+  }, [productId]);
+
   return (
     <Container size="xs" className="ln-u-push-top-xl">
       <Section>
         <Card className="hero">
-          <img src={academyLogo} className="app__logo" alt="logo" />
-          <h1 className="hero__title">Lightning Lunch</h1>
-          <Body1>
-            A lightweight react app - end goal is a lightning lunch experience,
-            with a product lister, with product cards (internal component with
-            props needed) with 'Add' button (external component) which can
-            increase a count (state).
-          </Body1>
+          {product && (
+            <>
+              <img
+                src={`https://assets.sainsburys-groceries.co.uk/gol/${product.id}/1/640x640.jpg`}
+                className="product__image"
+                alt="product-image"
+              />
+              <h1 className="product__title">{product.attributes.name}</h1>
+              <Body1 className="product__info">
+                <strong>{product.attributes.price.now}</strong>
+                {product.attributes.description && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: product.attributes.description,
+                    }}
+                  />
+                )}
+              </Body1>
+            </>
+          )}
         </Card>
       </Section>
     </Container>

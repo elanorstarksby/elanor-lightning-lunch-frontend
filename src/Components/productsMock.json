@@ -8,10 +8,10 @@
     },
     "data": [
       {
-        "id": "9180945",
+        "id": "7799118",
         "type": "product",
         "attributes": {
-          "productId": "9180945",
+          "productId": "7799118",
           "name": "BLT Sandwich",
           "buyable": true,
           "imageURL": "661-9180945-CEU764T.jpg",
@@ -21,10 +21,10 @@
         }
       },
       {
-        "id": "9180945",
+        "id": "7428442",
         "type": "product",
         "attributes": {
-          "productId": "9180945",
+          "productId": "7428442",
           "name": "Cheese and Onion Squares",
           "buyable": true,
           "imageURL": "661-9180945-CEU764T.jpg",
@@ -34,10 +34,10 @@
         }
       },
       {
-        "id": "2506785",
+        "id": "7568864",
         "type": "product",
         "attributes": {
-          "productId": "2506785",
+          "productId": "7568864",
           "name": "Rubicon Mango",
           "buyable": true,
           "imageURL": "661-9180945-CEU764T.jpg",
