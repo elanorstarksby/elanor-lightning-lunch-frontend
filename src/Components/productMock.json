@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": "7799118",
+    "type": "products",
+    "attributes": {
+      "description": "<p>Delicious Bacon Lettuce and Tomato sandwich with mayonnaise on wholemeal bread.</p>",
+      "name": "BLT Sandwich",
+      "partNumber": "7799118",
+      "brand": "Taste The Difference",
+      "price": {
+        "now": 3.49,
+        "mealDeal": true,
+        "flashText": "Great New Price"
+      }
+    }
+  }
+}
