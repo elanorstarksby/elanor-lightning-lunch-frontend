@@ -5,12 +5,6 @@ import Product from "./Components/Products/Product";
 import productDataMock from "./Components/productMock.json";
 
 const App = () => {
-  // useEffect(() => {
-  //   axios.get(`ENDPOINT_PLACEHOLDER`).then((res) => {
-  //     console.log(res);
-  //   });
-  // }, []);
-
   const [newSearchTerm, setSearchTerm] = useState("");
   const [productData, setProductData] = useState(null);
 
