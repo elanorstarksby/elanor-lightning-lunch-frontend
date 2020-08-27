@@ -1,34 +1,24 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { SearchField, withClear } from '@jsluna/form'
-import { SearchButton } from '@jsluna/button'
+import { SearchField, withClear } from "@jsluna/form";
+import { SearchButton } from "@jsluna/button";
 
-import { TogetherWeAreSainsburys } from '@jsluna/images'
+import { TogetherWeAreSainsburys } from "@jsluna/images";
 import {
   TextButton,
   Header as LunaHeader,
   HeaderLogo,
   HeaderActions,
   HeaderItem,
-} from '@jsluna/react'
-import { Basket } from '@jsluna/icons'
+} from "@jsluna/react";
+import { Basket } from "@jsluna/icons";
 
 import "./Header.scss";
 
-const ClearableSearchField = withClear(SearchField)
+const ClearableSearchField = withClear(SearchField);
 
-const Header = () => {
-  const [searchTerm, setSearchTerm] = useState('')
-
-  useEffect(() => {
-    axios.get(`ENDPOINT_PLACEHOLDER`).then((res) => {
-      console.log(res);
-    });
-  }, [])
-
-  const handleSearch = (e) => {
-    if (searchTerm) console.log(searchTerm)
-  }
+const Header = ({ handleSearch }) => {
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <LunaHeader>
@@ -38,14 +28,12 @@ const Header = () => {
       </HeaderLogo>
       <HeaderItem fullWidth align="center" label="Search">
         <ClearableSearchField
-          name='search-bar'
+          name="search-bar"
           hasButton
-          onChange = {(e) => setSearchTerm(e.target.value)}
-          button={<SearchButton
-            onClick={(e) => handleSearch(e)}
-            />}
-            className='header__search-bar'
-          />
+          onChange={(e) => setSearchTerm(e.target.value)}
+          button={<SearchButton onClick={() => handleSearch(searchTerm)} />}
+          className="header__search-bar"
+        />
       </HeaderItem>
 
       <HeaderActions align="right" label="Basket">
@@ -55,8 +43,7 @@ const Header = () => {
         </TextButton>
       </HeaderActions>
     </LunaHeader>
-  )
-
-}
+  );
+};
 
 export default Header;
