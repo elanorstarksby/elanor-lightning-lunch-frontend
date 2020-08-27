@@ -6,7 +6,7 @@ Use the search bar to search by product id and return the Product info.
 
 ### 1
 
-We currently `console.log` the input of our search bar. We want to instead use this input to fetch from the backend. We can do this by updating our local state and doing a get request when the state changes. Que: hooks.
+We currently `console.log` the input of our search bar. We want to instead use this input to fetch from the backend. We can do this by updating our local state and doing a get request when the state changes. Cue: hooks.
 
 For local state we can use the `useState` hook. the `useState` function takes and initial value and returns an array.
 
@@ -31,13 +31,15 @@ const handleSearch = (searchTerm = "") => {
   };
 ```
 
-Now we want to do soemthing if this changes. [`useEffect` is our lifecycle method](https://reactjs.org/docs/hooks-effect.html) which runs when the component mounts (onMount). It takes two parameters, the function to perform and an array. If the array is not passed at all, the function will run everytime the component rerenders (eg if the props change). If the array is empty, the function will only be called once, on mount (first render). You can pass things to the array to cause the effect to be ran if they change.
+Now we want to do something if this changes. [`useEffect` is our lifecycle method](https://reactjs.org/docs/hooks-effect.html) which runs when the component mounts (onMount). It takes two parameters, the function to perform and an array. If the array is not passed at all, the function will run everytime the component rerenders (eg if the props change). If the array is empty, the function will only be called once, on mount (first render). You can pass things to the array to cause the effect to be ran if they change.
 
 `useEffect(() => {do things here},[])` only runs once
 
 `useEffect(() => {do things here}, [searchTerm])` will run every time the searchTerm changes
 
-inside our useEffect we want to use axios to call the backend.
+when our useEffect function runs we want to send a GET request to get the data from the backend.
+
+Axios is a library which makes placing and interacting with requests with the backend easy, so we can do:
 
 ```
 axios
@@ -91,7 +93,7 @@ so really that line is the same as
 if (productData) { return (<Product product={productData} />)}
 ```
 
-it just looks nicer.
+it just looks nicer and is more readable.
 
 So, we've fetched the productData, stored it in state, and passed it into the Product component. Now we need to show it in the Product component.
 
@@ -105,7 +107,7 @@ so the Product component becomes:
 const Product = ({ product }) => {
 ```
 
-this means we can get all the details in the product object that was returned from the backedn by calling something like `product.attribute`
+this means we can get all the details in the product object that was returned from the backend by calling something like `product.attribute`
 
 Firstly we can change our image to be the product we have searched for, using the public sainsburys assets, `https://assets.sainsburys-groceries.co.uk/gol/[productId]/1/640x640.jpg`
 
