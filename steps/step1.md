@@ -167,3 +167,5 @@ Using the h1 and Body1 that are already there we can just pass in the correct ti
 We want the title on the right and the image on the left to start with, so we can use the float css (this is a tricky bit of css so best to not use it all the time, flexbox is excellent and you should all do [flexbox zombies](https://geddski.teachable.com/p/flexbox-zombies) when you get a chance)
 
 On the image and info css add `float: left` and the title css: `float: right; width: 65%;`. We might lose all the height and it's going to look a bit odd because float results in the component losing knowldege of how big it is. so to counteract that we can add `min-height: 3em;` to the image.
+
+[Step 2](./STEP2.md)
