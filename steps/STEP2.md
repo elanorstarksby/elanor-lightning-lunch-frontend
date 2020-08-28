@@ -29,7 +29,7 @@ Then we can use the FilledButton under our Body1:
 <FilledButton>Add to Trolley</FilledButton>
 ```
 
-BEeause of all our floating, it doesn't quite follow how we'd expect the flow to work.
+Because of all our floating, it doesn't quite follow how we'd expect the flow to work.
 
 We can change our css a bit to make it more flexible by introducing [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -79,7 +79,7 @@ We have a couple more parts of the price we can add too.
 
 Let's add the flashText next to the price.
 This would look good if it was in red, to make it stand out that it was a flashText, and if it came under the price.
-Add another div wrapper around both price elements with classname of `product__price`, and add a classname to the flassText of `product__price--flash.`
+Add another div wrapper around both price elements with classname of `product__price`, and add a classname to the flashText of `product__price--flash.`
 
 In the `__price` css, make it flex again: `display: flex;`
 
@@ -100,7 +100,7 @@ Now to make the flashText look like flash Text, we can use red. Either we can us
 
 `color: $ln-color-red;`
 
-Starting to come together. One thing you mightn otice is that, unless the backedn has sent us a £ sign as part of the response for price, it's just a number. To do this we can add a little helper function in our component to format the price. We want to be able to accept both responses, either with a £ sign or without. Making functions inside components is pretty nice and readable when you're using functional components (which this is).
+Starting to come together. One thing you might notice is that, unless the backend has sent us a £ sign as part of the response for price, it's just a number. To do this we can add a little helper function in our component to format the price. We want to be able to accept both responses, either with a £ sign or without. Making functions inside components is pretty nice and readable when you're using functional components (which this is).
 
 Firstly we define our function:
 
@@ -123,7 +123,7 @@ if(price.includes("£")) return price
 return `£${price}`
 ```
 
-you could put an `else`, but because of the early return, doing it like this is the same.
+you could put an `else`, but because of the early return doing it like this is the same.
 
 So now where we are displaying the price we want to change this to call the function:
 `formatPrice(product.attributes.price.now.toString())`
