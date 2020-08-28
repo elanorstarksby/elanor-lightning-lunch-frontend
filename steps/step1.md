@@ -20,7 +20,7 @@ We can add
 const [newSearchTerm, setSearchTerm] = useState("");
 ```
 
-This is setting `newSearchTerm` to an initial value of "" - empty string, and we have a setter funciont `setSearchTerm` to set the newSearchTerm when we want to change it.
+This is setting `newSearchTerm` to an initial value of "" - empty string, and we have a setter function `setSearchTerm` to set the newSearchTerm when we want to change it.
 
 So when do we want to change our search term? Inside our handleSearch function.
 
