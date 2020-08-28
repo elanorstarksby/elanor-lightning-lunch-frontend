@@ -6,7 +6,7 @@ Add an external component and spruce up the product card.
 
 ### 1
 
-On key part of a product display page is the option to add to trolley (ATT). For this we're going to want a button with some text and maybe an icon on it. In order to keep our websites looking the same no matter which team built it, we use the common compononent library. Mike told you a bit about them, we currently have the Argos Bolt and the Sainsbury's Luna. Since this is a sainsbury's style lunch experience we'll use luna
+One key part of a product display page is the option to add to trolley (ATT). For this we're going to want a button with some text and maybe an icon on it. In order to keep our websites looking the same no matter which team built it, we use the common compononent library. Mike told you a bit about them, we currently have the Argos Bolt and the Sainsbury's Luna. Since this is a sainsbury's style lunch experience we'll use luna
 
 First, we need to add the package using yarn, our package manager. From the terminal in this project (check the path if you can see it or do `pwd` to check you're in `tech-academy-ui`)
 
@@ -29,7 +29,7 @@ Then we can use the FilledButton under our Body1:
 <FilledButton>Add to Trolley</FilledButton>
 ```
 
-BEcause of all our floating, it doesn't quite follow how we'd expect the flow to work.
+BEeause of all our floating, it doesn't quite follow how we'd expect the flow to work.
 
 We can change our css a bit to make it more flexible by introducing [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -79,7 +79,7 @@ We have a couple more parts of the price we can add too.
 
 Let's add the flashText next to the price.
 This would look good if it was in red, to make it stand out that it was a flashText, and if it came under the price.
-Add another div wrapper around both price elements with classname of product**price, and add a classname to the flassText of product**price--flash.
+Add another div wrapper around both price elements with classname of `product__price`, and add a classname to the flassText of `product__price--flash.`
 
 In the `__price` css, make it flex again: `display: flex;`
 
