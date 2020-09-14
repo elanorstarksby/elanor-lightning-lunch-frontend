@@ -124,7 +124,7 @@ JS file
 <div element="div" className="product__info">
   {description && <p>{description}</p>}
 </div>
-<button className="productCard__button">Add To Trolley</button>
+<FilledButton>Add To Trolley</FilledButton>
 ```
 
 CSS file
@@ -133,28 +133,6 @@ CSS file
 &__info {
     text-align: right;
     padding: 10px 0;
-  }
-&__button {
-    text-align: center;
-    letter-spacing: normal;
-    background-image: none;
-    margin-bottom: 0px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    border: 0px solid rgb(0, 133, 66);
-    line-height: normal;
-    cursor: pointer;
-    overflow: hidden;
-    font-family: Barlow, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    transition: background-color 0.2s ease 0s, color 0.2s ease 0s,
-      border-color 0.2s ease 0s;
-    padding: 12px 16px 13px;
-    background-color: rgb(0, 133, 66);
-    color: rgb(255, 255, 255);
-    display: block;
-    width: 100%;
   }
 ```
 
@@ -202,7 +180,8 @@ const ProductCard = ({ id, name, priceNow, flashText, description, brand }) => {
         <div element="div" className="product__info">
           {description && <p>{description}</p>}
         </div>
-        <button className="productCard__button">Add To Trolley</button>
+        <FilledButton>Add To Trolley</FilledButton>
+
       </div>
     </div>
   );
@@ -243,29 +222,6 @@ CSS file
   &__info {
     text-align: right;
     padding: 10px 0;
-  }
-
-  &__button {
-    text-align: center;
-    letter-spacing: normal;
-    background-image: none;
-    margin-bottom: 0px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    border: 0px solid rgb(0, 133, 66);
-    line-height: normal;
-    cursor: pointer;
-    overflow: hidden;
-    font-family: Barlow, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    transition: background-color 0.2s ease 0s, color 0.2s ease 0s,
-      border-color 0.2s ease 0s;
-    padding: 12px 16px 13px;
-    background-color: rgb(0, 133, 66);
-    color: rgb(255, 255, 255);
-    display: block;
-    width: 100%;
   }
 
   &__price {
