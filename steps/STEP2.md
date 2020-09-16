@@ -137,3 +137,5 @@ so add `element="div"` then add some padding to the css. The padding attribute w
 `padding: 25px 0;`
 
 Have a play around with the leftover attributes, maybe style the Meal Deal into a badge style with some background colour.
+
+[Step 3](./Step3.md)

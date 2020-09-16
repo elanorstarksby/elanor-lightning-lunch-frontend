@@ -49,3 +49,5 @@ productList.map(productItem => <div>{productItem.attributes.name}</div>)
 ```
 
 Now you should be able to see a list of product names when you search.
+
+[Step 4](./Step4.md)

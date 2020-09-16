@@ -18,6 +18,9 @@ You will also see any lint errors in the console.
 
 [Step 1](./steps/STEP1.md)
 [Step 2](./steps/STEP2.md)
+[Step 3](./steps/Step3.md)
+[Step 4](./steps/Step4.md)
+[Step 5](./steps/STEP5.md)
 
 ## Learn More
 
