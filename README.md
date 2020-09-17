@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 ## Project Steps:
 
-[Step 1](./steps/STEP1.md)
+[Step 1](./steps/step1.md)
 [Step 2](./steps/STEP2.md)
 [Step 3](./steps/Step3.md)
 [Step 4](./steps/Step4.md)
