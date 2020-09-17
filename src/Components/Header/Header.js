@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { SearchField, withClear } from "@jsluna/form";
 import { SearchButton } from "@jsluna/button";
@@ -16,7 +16,6 @@ import { Basket } from "@jsluna/icons";
 import "./Header.scss";
 
 const ClearableSearchField = withClear(SearchField);
-
 const Header = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
