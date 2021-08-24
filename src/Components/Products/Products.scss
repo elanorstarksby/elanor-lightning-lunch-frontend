@@ -1,24 +1,13 @@
 @import "@jsluna/foundation/scss/main";
 
-.product {
-  &__image {
-    display: block;
-    width: 30%;
-    min-height: 3em;
-    margin: $ln-space $ln-space;
-    float: left;
-  }
-  &__title {
-    width: 65%;
-    float: right;
-  }
-
-  &__info {
-    float: left;
-    text-align: right;
-  }
+.app__logo {
+  display: block;
+  width: 16rem;
+  margin: $ln-space auto;
+  vertical-align: middle;
 }
 
 .hero {
+  text-align: center;
   display: inline-block;
 }
