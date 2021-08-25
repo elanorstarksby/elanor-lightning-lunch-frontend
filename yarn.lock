@@ -1408,41 +1408,33 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@jsluna/accordion@^1.4.3":
-  version "1.4.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/accordion/-/accordion-1.4.3.tgz#fa3b2b0825ba21f74e40585f90bbb95a988c1f15"
-  integrity sha512-y0yHyDMvGm5aYwXm71h5KM03fO74Dm32z0jMFp+yvqY68RNgkiS6HNYhnl1W6x7kYj0AAyk7v5CRdVPthsjauQ==
+"@jsluna/accordion@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/accordion/-/accordion-2.2.2.tgz#062674e09e40a2214a244135069f4e8d7db6a88f"
+  integrity sha512-XNNvAinxbvwVL+MwaVZQbXfc8oIG3owZxvOZvsSFwl4aBcrs8q1KvgFegJuAODPV5lrQCfgWoj+eEg+VueFg6A==
   dependencies:
-    "@jsluna/types" "^1.3.3"
+    "@jsluna/types" "^2.2.2"
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/autocomplete@^1.6.3":
-  version "1.6.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/autocomplete/-/autocomplete-1.6.3.tgz#4ab03eaa2f7396a3107262a00a20e6065e8eefb9"
-  integrity sha512-KOVYGO68CuGVOO0d/Tmib7AyAdNVYTTo/HjgcBN0CTHjpmMLyBEXabDW9yOn0lxXqFJPusRctgi6cQMULROb1g==
+"@jsluna/autocomplete@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/autocomplete/-/autocomplete-2.2.2.tgz#4a8e36c46d526e984a75ee71ab69d1d1793867c2"
+  integrity sha512-raQQBx7HHr2aJ1uNiMlZxxYGL3jwiDc2stAoQ2t8yO7tVRKLlJcFM1tkpNMaIheimF1AAtv4aHTu1iFYLSottA==
   dependencies:
-    "@jsluna/button" "^1.6.3"
-    "@jsluna/form" "^1.5.3"
-    "@jsluna/icons" "^4.4.3"
-    "@jsluna/progress" "^2.2.3"
-    "@jsluna/utils" "^1.5.3"
+    "@jsluna/button" "^2.2.2"
+    "@jsluna/form" "^2.2.2"
+    "@jsluna/icons" "^5.2.2"
+    "@jsluna/progress" "^3.2.2"
+    "@jsluna/utils" "^2.2.2"
     classnames "^2.2.0"
     downshift "^2.0.17"
     prop-types "^15.7.0"
 
-"@jsluna/breadcrumbs@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/breadcrumbs/-/breadcrumbs-1.3.3.tgz#9980e2ae935a6ce0b7ad01d46448f208e5e01797"
-  integrity sha512-Uy6UcFbGVgZqs/6Hzd4TXLCEBxho+zfNS/3/g2WW2QdA4VnS1bKo04kayxs3ZppCuAAa+FxUjJGsQJvSCaoLWg==
-  dependencies:
-    classnames "^2.2.0"
-    prop-types "^15.7.0"
-
-"@jsluna/button@^1.6.3":
-  version "1.6.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/button/-/button-1.6.3.tgz#d0e8dcb352978d3620d075adb4af1cfc1442c575"
-  integrity sha512-GXd8FiiQLFeBP/mPNkzLnZNQAQ/sRzOpQcdPFE0kz3RBbpKHtZSPfdYs6M2f1gi5ORYByCDWyZ7BGn44HTf6vA==
+"@jsluna/breadcrumbs@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/breadcrumbs/-/breadcrumbs-2.2.2.tgz#c09fb62b741505e7c0090898c95796423e530be6"
+  integrity sha512-s+0VOYI5cYYH/kKNXIYsEeXb+AAGPCZg59X4dlp2z7g2VVNvvfdDNi2NaYMHRRKBYU0/hd4pvq9EM1Yz8QvLgQ==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
@@ -1455,14 +1447,6 @@
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/card@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/card/-/card-1.3.3.tgz#b62fdcf8a4d4ccfe3abe36712b801b1e7dfddc4d"
-  integrity sha512-WYi7dAk+trsqSdLWd3y7ejRTI5/6nMIFiaCrVTqenU10KZLlEpuGH6T6vmanrXGd7MJApq2S/umYQxsKCf4IDQ==
-  dependencies:
-    classnames "^2.2.0"
-    prop-types "^15.7.0"
-
 "@jsluna/card@^2.2.2":
   version "2.2.2"
   resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/card/-/card-2.2.2.tgz#b08d0cf462fd9499f18235af9a70412ae53ddb0f"
@@ -1471,64 +1455,48 @@
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/date-picker@^1.2.3":
-  version "1.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/date-picker/-/date-picker-1.2.3.tgz#006da9353446f5b35433da35d589a10617b3cabf"
-  integrity sha512-ryrWYTOBYeu4D8AgEEqcRGbar09ejO4J0AxFMhdEMiai2cQbOou8te3qwhFoVGq3FDEU6L8MFcbixLsmJN43zA==
+"@jsluna/date-picker@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/date-picker/-/date-picker-2.2.2.tgz#79ba75a59f462cca835869e50025b5ab82237e14"
+  integrity sha512-hF7MGGYKzFPK1PzZNFsL73KAIi7P/2tXFJQYRA1Yku5vxETSKtmhRQycCvLI4q+bdkm22Ul4IJmjLg1BrdJD5w==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
     react-dates "21.8.0"
 
-"@jsluna/fonts@^3.2.3":
-  version "3.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/fonts/-/fonts-3.2.3.tgz#89f0a97bc5318873490417b1f5e27e6147373266"
-  integrity sha512-TSPhdapPSSIqb3HBN5Cj+RrrL+t0BExBqmpOwJrTJcdhmn+gOwKorJIF1aUlJo7PGzsz6sEeK9CobXy8mGLx0A==
+"@jsluna/fonts@^4.2.2":
+  version "4.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/fonts/-/fonts-4.2.2.tgz#c60b5d33b35cd69b5bfa4a759484f31703725fb7"
+  integrity sha512-1mNu91A6N5iw9D2JNqy/Nx6FFsQnhbDlXBdLGPApNmnKp/JPvMA5v6Axi3i4WfbwFvPaVxzDalbdVpl8oEqdOw==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/footer@^1.2.3":
-  version "1.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/footer/-/footer-1.2.3.tgz#0ba503f7699e0e38d3e4be2b1ae6fc5f0658e49c"
-  integrity sha512-SwiAqf0qOXoerRNJhPQSvr9PmZUV2ffI4g1oixNvrf578u4VHh0dMM+J/DnDJJcffcPfAtZu+1ecHWStdVVtag==
+"@jsluna/footer@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/footer/-/footer-2.2.2.tgz#6c69283f6f51d4d65a614e0920bcf24d582913e2"
+  integrity sha512-2Vm1wNqfMzaR1EAh0WjLBcO9L6a62+fdylqfnkAoUzhknaP6078aRAo1G4XiNWgGpF+d/zfw+KpMGN8c+JD1vw==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/form@^1.5.3":
-  version "1.5.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/form/-/form-1.5.3.tgz#1d31e12b31b0e691909ffd6d2f895ae0a5d25a2c"
-  integrity sha512-+0DTINFw7ESQTMmPcUhCkniAAi3WzqAQvv6s9eTP7hkYd7dyRDeQPkcHonyl18DTQE7p+pSwAmrp22efQO46qg==
+"@jsluna/form@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/form/-/form-2.2.2.tgz#40030398685b0d0939d9bef527be340fcae1daa8"
+  integrity sha512-MyzRaqM2mHvOShIh11+amsiPw8sgYZBr/yCo6alnfnBZJICRNajql+FTiOLSjrpLA3DifkaUpkmcYpXyl5Sbwg==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/foundation@^5.3.3":
-  version "5.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/foundation/-/foundation-5.3.3.tgz#3ae60c7778be4c8c69bfd3d51b127b442c9243c6"
-  integrity sha512-5gClw6nXRbsou24ADGisRAVLsZEzjqVc3sMEVtXU4N/Y75wq6cDivZ3uNE2addFFBtOu4wtwOzHaN1/kZauW0w==
-
-"@jsluna/grid@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/grid/-/grid-1.3.3.tgz#f0a1bf61370c751ca11e365bf8d4a6d3f63931b7"
-  integrity sha512-e+e7irOYpVvhwK5EBos1FiCSD+E71Zc1UYwpv5KZ+ukv4Es4b4X0u42hnc8eJOPxXSCdsZl8LmYByrVCke/yAg==
-  dependencies:
-    classnames "^2.2.0"
-    prop-types "^15.7.0"
+"@jsluna/foundation@^6.2.2":
+  version "6.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/foundation/-/foundation-6.2.2.tgz#436f6f6da8581d765d2a3a546da7a4829b2027cb"
+  integrity sha512-OYC0vJxitGQIPEUze4k6vdmqiuRo52vc/UJCdAkg7m0TMA198stmgnCkRBV4dWrk/gwhXeIQjv8MYqAf2uY+1Q==
 
 "@jsluna/grid@^2.2.2":
   version "2.2.2"
   resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/grid/-/grid-2.2.2.tgz#483e70ef117a4da897a5a82570001770354a9aa3"
   integrity sha512-CF0IlNhOeyoaoOInq1onZsMNcTng9fUA6fsIVX17I1QLDjtb6FU52Fgs57VjJKoDS+iNzuvcROErluFwFZ8nww==
-  dependencies:
-    classnames "^2.2.0"
-    prop-types "^15.7.0"
-
-"@jsluna/header@^2.4.3":
-  version "2.4.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/header/-/header-2.4.3.tgz#660a0e1a1f48c1b6db864d049532aac7b0da99d2"
-  integrity sha512-muPo7fUADSqukv48LDTxZo+9wL7zz59HTBQxW83kU4D5wltIQlryJ/YhQ00RtnwGJYEkER4H2X17JxPXurIhXg==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
@@ -1541,84 +1509,76 @@
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/icons@^4.0.0", "@jsluna/icons@^4.4.3":
-  version "4.4.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/icons/-/icons-4.4.3.tgz#2d5902389a16a11f5a44859d8035709e6dd4cc79"
-  integrity sha512-zQduAH355YNuHDjED4uthgV43xYY5D0aCa9KPtv1EP2WZTuNaniLf+CG5BruFopTmMu/WwrlqgjdM+Muji/Zeg==
+"@jsluna/icons@^5.2.2":
+  version "5.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/icons/-/icons-5.2.2.tgz#b1df13e776640e240e5a1a5277e52cce540dfcf8"
+  integrity sha512-UIfYh9r7EW4EvPY+EjwCw8+OSNGYxKUzv0HYB8Nl58bJHv1pFc5aWTfN1wYthLibelK4Gw4GTV5q0rqVDeqO4Q==
   dependencies:
     classnames "^2.2.0"
 
-"@jsluna/images@^3.1.2":
-  version "3.6.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/images/-/images-3.6.3.tgz#ceda0ad90ff9b235b36daa341a5bb7dcc8fcd1d9"
-  integrity sha512-0cO9kF5vH+vKAb7YsOLWi/9pgCjrg9FjMGa4LW7gd+QrKneITT0idaCTJi7x/u5KAOIaxgpCWYzS6Kaps76tFg==
+"@jsluna/images@^4.2.2":
+  version "4.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/images/-/images-4.2.2.tgz#f2c6481775a34f6866109a5c7ad648bd35b4a745"
+  integrity sha512-QQYvP05JSL3T7toq3+A6bTcblwHRUo1zE+kuGjKzJ/9g7evZn3yFt7QB8YaFMALZsaKBxWUgjA6Jf3XE6MKafA==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.6.2"
 
-"@jsluna/link@^1.4.3":
-  version "1.4.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/link/-/link-1.4.3.tgz#56e548f9f6f430cd80a104f832b4ec07f41627a9"
-  integrity sha512-mNOXgDFlExX4Z6qM9rLqCTgh3dj6s2jsOqfZPXLh03lDw6etRIy3i0bVClaRfjteMAE2N1kPSIX787rjuBqvkg==
+"@jsluna/link@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/link/-/link-2.2.2.tgz#8a1d37da49df7d0c138084cce50274b4f80880b8"
+  integrity sha512-lCKWc7riI39S34wgj/lfaxd/OcOHswocLsS9m9QShL/fkds7uYraFhHubDhFiH6q1UIXbBlDfFyJufNOiAAvCA==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/list@^2.3.3":
-  version "2.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/list/-/list-2.3.3.tgz#e04c68806d18c68ce86133d2d43bc29458fb531e"
-  integrity sha512-FZWU0qXcwSzE92uXre8/jdLFc+Nume9Vfn69MY7H/6nkNjW+7LnZdCmMd4XN78uEbWJV8hmQQezQslkAFqpEOA==
+"@jsluna/list@^3.2.2":
+  version "3.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/list/-/list-3.2.2.tgz#d66362de42fbec9df7fa99fc3ceb113640748512"
+  integrity sha512-gM2g6o8eAUWlX2jD/VUuZlXtrxCeY2hWnoWbJejTr4cy8Nk1pP5lPOHuRzUmf6/dlAkL1Tz1ICIboXp4PM3F7g==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/modal@^2.2.3":
-  version "2.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/modal/-/modal-2.2.3.tgz#40e961f3245eb1e89100c3e63dd0a1a8dc47253e"
-  integrity sha512-XfdxnATxWPSg6vkSMPm8U9UkKhpPPVCzNfmaAeXep0Y3g/scNrHswd8KDahyhwmPfxKve+Aw+fEUpQXX5S0FSA==
+"@jsluna/modal@^3.2.2":
+  version "3.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/modal/-/modal-3.2.2.tgz#a1a1b64f1f67f149d9de065df33b98f4bac7038f"
+  integrity sha512-ftUZKSvoAuM51c9/h/t1/Smj+WvB0GyHr/CsmoifZe7+oDQO/BywsRzlT9HDTXpH4T1lH8AKD4uqKh2xctb9Fw==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
     react-focus-lock "^1.17.6"
 
-"@jsluna/notification@^1.2.3":
-  version "1.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/notification/-/notification-1.2.3.tgz#f32bd1a71b939f7a8084f98700374feec796f12b"
-  integrity sha512-DxQ0asVJevKZUDsCuxYiRKIet+iSGJjv9Y0mWizI9Jqwev/47YaZPMA6du+G3ptNYVlUuUk/ptx9mdmmTTI/zQ==
+"@jsluna/notification@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/notification/-/notification-2.2.2.tgz#39d40ed83e8027defef96bd510db0f8719272e8e"
+  integrity sha512-I9h1Mk8wGTxjulo0IjxaIuPgvnSQ+tP20NzA9q1Q9ginV37/48kFK/SW8ny11FxNsZMO2V3AajIlYbcEUho7YA==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/pagination@^1.2.3":
-  version "1.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/pagination/-/pagination-1.2.3.tgz#1d6e96820d7a94f3b3a444847976b339480cbd20"
-  integrity sha512-9roZXH+WoV+vcfmmQ5ee8ll3Ed2V/ceMoExgO77Cns6snKqmPgiS73HO7hcc/nombGTOZozDdHt24GAnP6K/9Q==
+"@jsluna/pagination@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/pagination/-/pagination-2.2.2.tgz#46ac9d8e35e53183e6d49c0e1f3bfb195812b935"
+  integrity sha512-QRPS6nooRbHRoy1pzeKK2FB1MhCeJGWtQ6Tbjhgz6BqcUDX7SIrYWY066gM2TbVe8tsBY2p5ziqqbpvG8je5+w==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/primer@^1.4.3":
-  version "1.4.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/primer/-/primer-1.4.3.tgz#3d6b7994ee368f1e01c67f52038113d7e30183a7"
-  integrity sha512-v3E/Bt4eoU/aetDD//2P5dQxQY+/75ArVruzNMnGTXarKE4axRyt2io/cry+wLDyTwmNbfGkYKMYFX9Zn1k+eQ==
+"@jsluna/primer@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/primer/-/primer-2.2.2.tgz#9600ca2bc03e46edae5b521bd3d2de8352ae8c0b"
+  integrity sha512-EDo7T4JbLBRtSqUy8g6Ryynt8mwektcv1SUecUFguaJCP+tAJDg+KvhRMvWIVg95OMSK+ePb2V723A4lGCs6gQ==
   dependencies:
-    "@jsluna/fonts" "^3.2.3"
-    "@jsluna/foundation" "^5.3.3"
-    "@jsluna/typography" "^1.3.3"
+    "@jsluna/fonts" "^4.2.2"
+    "@jsluna/foundation" "^6.2.2"
+    "@jsluna/typography" "^2.2.2"
     normalize.css "^8.0.1"
 
-"@jsluna/progress@^2.2.3":
-  version "2.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/progress/-/progress-2.2.3.tgz#71365c100865c79b7fb918a4f473c0d221178106"
-  integrity sha512-GS0z1zMAnEXWTQgvFqZaSkDY3px3KzB9CBg+ttetIMtbdKYHuteAHkUlXCc6goc8woAyEWJmVD4qtC6bB6T0fA==
-  dependencies:
-    classnames "^2.2.0"
-    prop-types "^15.7.0"
-
-"@jsluna/section@^1.2.3":
-  version "1.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/section/-/section-1.2.3.tgz#754fe635935396f9fc5ce2946ed223b4c465538e"
-  integrity sha512-ytoxftgyHjY9qwKmZqIuyQxAyVtjW2FjnkK4a7ATEqv7eAR13BcrPsTWgtWqwNIYv+zeXfhZS1k+r839PdGvCg==
+"@jsluna/progress@^3.2.2":
+  version "3.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/progress/-/progress-3.2.2.tgz#df24d2e4328c0f11604ab370229b0e7c355c2b2f"
+  integrity sha512-MhKlazgA148zu6WffRU3PzalHpa6VIs0/c47Hnky9r53OH0Trx3+ZN1dqQjRRNljR8qCvXYKvyPwSdKlP4QDpQ==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
@@ -1631,101 +1591,101 @@
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/site-layout@^2.2.3":
-  version "2.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/site-layout/-/site-layout-2.2.3.tgz#cf9d9b63d353d5d1f15d72edb18806a683d3522f"
-  integrity sha512-+CTsyhLYmAYRKpvHWmiP+6NcOK4gBghO49R4C5fO/iJQ/uW1kSVej98KA103pUxHt/5Cf6inbVho7e6cZyykVw==
+"@jsluna/site-layout@^3.2.2":
+  version "3.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/site-layout/-/site-layout-3.2.2.tgz#ef4b09f77feca6bc39543eef1bd69fe2a000ade0"
+  integrity sha512-7K42up65MJB2JDccKXWwfNEImOtiwZPF5SztteU00T6bckre2Lk4zZnk+VTvp4rvIUumdu88ssX3+JvU3O/gEA==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/style@^4.1.77":
-  version "4.5.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/style/-/style-4.5.3.tgz#c8e10d505459d8135586f55eaa740768399254be"
-  integrity sha512-t+awLsV4m1RZ0n/WhAhFXswob4LEDmSvRzcSQ+Qjbb4ofkjKAv+vBbvvZGdgzYuq7GXv230x8RqjMHPoHbfYEg==
+"@jsluna/style@^5.2.2":
+  version "5.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/style/-/style-5.2.2.tgz#6fbc7a132dacbda9ed4912aeb93aa4ac7ce17f76"
+  integrity sha512-CuI4XK+eaj+w4rpTyAFReqBF5XiR67NsH5Ro0uAK0TKxinvOH/wURUvYyWSHJwB45P5ilJ9ATyeoV8sWM8g5qw==
   dependencies:
-    "@jsluna/accordion" "^1.4.3"
-    "@jsluna/autocomplete" "^1.6.3"
-    "@jsluna/breadcrumbs" "^1.3.3"
-    "@jsluna/button" "^1.6.3"
-    "@jsluna/card" "^1.3.3"
-    "@jsluna/date-picker" "^1.2.3"
-    "@jsluna/fonts" "^3.2.3"
-    "@jsluna/footer" "^1.2.3"
-    "@jsluna/form" "^1.5.3"
-    "@jsluna/foundation" "^5.3.3"
-    "@jsluna/grid" "^1.3.3"
-    "@jsluna/header" "^2.4.3"
-    "@jsluna/icons" "^4.4.3"
-    "@jsluna/link" "^1.4.3"
-    "@jsluna/list" "^2.3.3"
-    "@jsluna/modal" "^2.2.3"
-    "@jsluna/notification" "^1.2.3"
-    "@jsluna/pagination" "^1.2.3"
-    "@jsluna/primer" "^1.4.3"
-    "@jsluna/progress" "^2.2.3"
-    "@jsluna/section" "^1.2.3"
-    "@jsluna/site-layout" "^2.2.3"
-    "@jsluna/table" "^1.3.3"
-    "@jsluna/tabs" "^2.2.3"
-    "@jsluna/toggle-button" "^1.3.3"
-    "@jsluna/tokens" "^5.5.3"
-    "@jsluna/typography" "^1.3.3"
-    "@jsluna/utils" "^1.5.3"
+    "@jsluna/accordion" "^2.2.2"
+    "@jsluna/autocomplete" "^2.2.2"
+    "@jsluna/breadcrumbs" "^2.2.2"
+    "@jsluna/button" "^2.2.2"
+    "@jsluna/card" "^2.2.2"
+    "@jsluna/date-picker" "^2.2.2"
+    "@jsluna/fonts" "^4.2.2"
+    "@jsluna/footer" "^2.2.2"
+    "@jsluna/form" "^2.2.2"
+    "@jsluna/foundation" "^6.2.2"
+    "@jsluna/grid" "^2.2.2"
+    "@jsluna/header" "^3.2.2"
+    "@jsluna/icons" "^5.2.2"
+    "@jsluna/link" "^2.2.2"
+    "@jsluna/list" "^3.2.2"
+    "@jsluna/modal" "^3.2.2"
+    "@jsluna/notification" "^2.2.2"
+    "@jsluna/pagination" "^2.2.2"
+    "@jsluna/primer" "^2.2.2"
+    "@jsluna/progress" "^3.2.2"
+    "@jsluna/section" "^2.2.2"
+    "@jsluna/site-layout" "^3.2.2"
+    "@jsluna/table" "^2.2.2"
+    "@jsluna/tabs" "^3.2.2"
+    "@jsluna/toggle-button" "^2.2.2"
+    "@jsluna/tokens" "^6.2.2"
+    "@jsluna/typography" "^2.2.2"
+    "@jsluna/utils" "^2.2.2"
     browserslist-config-luna "^1.2.3"
     styled-components "^5.3.0"
 
-"@jsluna/table@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/table/-/table-1.3.3.tgz#3823c8de9b4fdc030372036b180f8beda65ec5b7"
-  integrity sha512-XFLhizV7h+eQ7bOTQ9YuxMgCKnmFWSsTs9et3WL9UU8NprgQWwt81e6vLa+qitl5EOp1Gydw+QiQvdzc4RE5UA==
+"@jsluna/table@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/table/-/table-2.2.2.tgz#79adf801e13a7439f1284dad2f97fa59e8164b68"
+  integrity sha512-+eKy1ybvoFuFkSZGF7tZMW7SaGW/NYspraA0UhwYyc/tToPA5JiWoX3zBMxl52adXSJy9rbKTkisBv65VcaGsQ==
   dependencies:
     classnames "^2.2.0"
     lodash.get "^4.4.2"
     prop-types "^15.7.0"
 
-"@jsluna/tabs@^2.2.3":
-  version "2.2.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/tabs/-/tabs-2.2.3.tgz#8af71aaa82051bd4b7a3a17ca6cf4977a05e6aab"
-  integrity sha512-ZMzsaDnJ3lIgsepWGBWrD7b/CvJElUCFEh+6M8GZqSGfLg072MsfUpBxEHYjoOhI9Rmka/soEk33q4vtpNR8aQ==
+"@jsluna/tabs@^3.2.2":
+  version "3.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/tabs/-/tabs-3.2.2.tgz#c9b08cd1e65c506b2bc9e8c833d119a0aac3c5db"
+  integrity sha512-B2UFVTBnzajTaBoRyjJeXIg0jEtqjt17vy5Xu18rdS1YLrZiOIwwzP859fdU5T//8TSy7Oj7gm7LZFuyID6gBg==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/toggle-button@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/toggle-button/-/toggle-button-1.3.3.tgz#2724eaacfa92904c85c026e4494e6db1287e620e"
-  integrity sha512-D7P8U+/zKnpymosWCEnx+b3OJbpmvHJ320Ja4Cw6EsDNwidDFLXq9FR/xhPaztUb1tQXi1q/2cZJWNpgJ6KXjA==
+"@jsluna/toggle-button@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/toggle-button/-/toggle-button-2.2.2.tgz#69deab1282345e52e1bed74435071e8559b1b42f"
+  integrity sha512-QEsDXvsajwCRhIIJXnBn+mIZ9J+nX1h7zx9VvuO/yLU0u/3qFM+4xQ5Ob4lEXx69ilRPLn3Tj9kMeYAm+PwGsw==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/tokens@^5.5.3":
-  version "5.5.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/tokens/-/tokens-5.5.3.tgz#835edd04e99fcbfa95bc40a4ab79d4143184938f"
-  integrity sha512-ni7ZoBy7PkB7xX3nO1LfIu+1FXIu+1t6NSnI3RfBKaVCCway9nQs050CJMb8OhC6unaf6gQ4tsmgF/BZFGwh9Q==
+"@jsluna/tokens@^6.2.2":
+  version "6.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/tokens/-/tokens-6.2.2.tgz#c8cdd119c8049d0c1fa76474152dbd7c03aabb16"
+  integrity sha512-Wvdnvv5sIYHL1Xq6XJig1t5nFqUsG2Gxc9RmMogvPo6fpF9D1HbHRjzDxfEUgaV5YXmsLRaIATe3YmvTSDCC0A==
 
-"@jsluna/types@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/types/-/types-1.3.3.tgz#d5bf869fdf37b50e25d10f54411a4f5022048223"
-  integrity sha512-PBYQKVIQ3KVuQFLlMEDohDQh4SY2dfKFFnEWfOLiGJ5c+diBF5yCtXp5ZQfbbpFhPz841rZUrapI7/9jAoocaw==
+"@jsluna/types@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/types/-/types-2.2.2.tgz#6ab983997d7a2525a6de9d8021f249f4998fe0b6"
+  integrity sha512-vp3705zCNlAKcyhKDAscz5OdmHnPhiK6f+am3/HiH4hWs8Xb1gIUT3SU/XLqzYOvn8lw3vxnaj1r0ngEVHbygA==
   dependencies:
     "@types/jest" "^24.0.23"
     "@types/react" "^16.9.11"
     "@types/react-dom" "^16.9.4"
 
-"@jsluna/typography@^1.0.47", "@jsluna/typography@^1.3.3":
-  version "1.3.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/typography/-/typography-1.3.3.tgz#849535566abe4875301536be6cea8fa212ee1515"
-  integrity sha512-AayOoTfXdR0Qguy9WhHtop0Ah70oOvE8ANoXyMXWUSgwpmE9PAYWKxot4c+Vv2fCKe6wnbpBsfUCnGxTfu+5SQ==
+"@jsluna/typography@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/typography/-/typography-2.2.2.tgz#22225c229d6447b789535e25323b6c09859be90b"
+  integrity sha512-3/8DUud80LnmdTOoH7wvzv20ZJx25tEcrVqZs1mnZ0bCXCsI3ZIvlBS6gW319/QAK1bP2e/HVvzLT4jOcG3LEQ==
   dependencies:
     classnames "^2.2.0"
     prop-types "^15.7.0"
 
-"@jsluna/utils@^1.5.3":
-  version "1.5.3"
-  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/utils/-/utils-1.5.3.tgz#a3faea31662b57e1fb8b8d8613ad7637056697d0"
-  integrity sha512-UmcHqAWqnJXKC8lKgmDu9nJiEurRbSr55M6MSFyFmFebVRlXKkl9rhKcSWHBQGt5Qcxj+upYOyZw6Zbgqf6S5Q==
+"@jsluna/utils@^2.2.2":
+  version "2.2.2"
+  resolved "https://nexus.public.prd.golf-prod.js-devops.co.uk/repository/luna/@jsluna/utils/-/utils-2.2.2.tgz#426e8c7065f5dee760f3ddad38bd8f0ee88f2e2a"
+  integrity sha512-fIwgWRo9REK1Odk8zHK7WWQQhZYvK/Vh4oG2gew3we4le15mL5FGC6g7XJSI919H6WTWGzBeykntv506kM79Xg==
   dependencies:
     chalk "^4.1.0"
     cosmiconfig "^7.0.0"
