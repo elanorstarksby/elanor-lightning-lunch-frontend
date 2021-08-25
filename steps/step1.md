@@ -35,7 +35,7 @@ Now we want to do something if this changes. [`useEffect` is our lifecycle metho
 
 `useEffect(() => {do things here},[])` only runs once
 
-`useEffect(() => {do things here}, [searchTerm])` will run every time the searchTerm changes
+`useEffect(() => {do things here}, [newSearchTerm])` will run every time the newSearchTerm changes
 
 when our useEffect function runs we want to send a GET request to get the data from the backend.
 
