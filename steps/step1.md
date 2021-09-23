@@ -121,7 +121,7 @@ src=`https://assets.sainsburys-groceries.co.uk/gol/${product.id}/1/640x640.jpg`
 
 We should probably also change some classnames here, given they're not very relevant anymore for a product display page. Notice also that classnames in react are `className=` rather than in HTML `class=`.
 
-If we reflect back to BEM then we know we want our classnames to follow the pattern of `block__element--modifier`. In this copmonent our block can be `product` and our element can be `image`.
+If we reflect back to BEM then we know we want our classnames to follow the pattern of `block__element--modifier`. In this component our block can be `product` and our element can be `image`.
 
 So `className="product__image"`.
 in our products.scss we can now change the `app__logo` to this classname: `.product__image {}`.
