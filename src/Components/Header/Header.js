@@ -1,49 +1,42 @@
-import React, {useState} from "react";
-import { SearchField, withClear } from "@jsluna/form";
-import { SearchButton } from "@jsluna/button";
+import React, { useState } from 'react'
 
-import { TogetherWeAreSainsburys } from "@jsluna/images";
 import {
   Header as LunaHeader,
   HeaderLogo,
   HeaderActions,
-  HeaderItem
+  HeaderSearch,
 } from '@jsluna/header'
-import { TextButton } from "@jsluna/button"
-import { Basket } from "@jsluna/icons";
+import { TextButton } from '@jsluna/button'
+import { Basket } from '@jsluna/icons'
 
-import "./Header.scss";
-
-const ClearableSearchField = withClear(SearchField);
+import './Header.scss'
 
 const Header = ({ handleSearch }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('')
 
   return (
     <LunaHeader>
-      <HeaderLogo>
-        <TogetherWeAreSainsburys className="header__logo" />
-        <span className="ln-u-visually-hidden">Together We Are Sainsburys</span>
-      </HeaderLogo>
-      <HeaderItem fullWidth align="center" label="Search">
-        <ClearableSearchField
-          name="search-bar"
-          hasButton
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          button={<SearchButton onClick={() => handleSearch(searchTerm)} />}
-          className="header__search-bar"
-        />
-      </HeaderItem>
+      <HeaderLogo>Lightning Lunch</HeaderLogo>
+      <HeaderSearch
+        fullWidth
+        tabBar='max-nav'
+        tabBarSoft
+        field={{ hasButton: true, placeholder: 'Search for products' }}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onSubmit={(e) => {
+          e.preventDefault()
+          handleSearch(searchTerm)
+        }}
+      />
 
-      <HeaderActions align="right" label="Basket">
-        <TextButton className="ln-u-pull-right">
+      <HeaderActions label='Basket'>
+        <TextButton className='ln-u-pull-right'>
           <Basket /> 42
-          <span className="ln-u-visually-hidden">Your basket</span>
+          <span className='ln-u-visually-hidden'>Your basket</span>
         </TextButton>
       </HeaderActions>
     </LunaHeader>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
