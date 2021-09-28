@@ -1,0 +1,49 @@
+@import '@jsluna/foundation/scss/main';
+
+.basketCard {
+  padding: 10px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &__image {
+    width: 30%;
+
+    align-self: center;
+  }
+
+  &__price {
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    &--flash {
+      color: $ln-color-red;
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  // &__button {
+
+  // }
+}
+
+.basket-list-container {
+  max-width: 1200px;
+
+  padding: 10px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}

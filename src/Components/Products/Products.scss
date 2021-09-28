@@ -1,4 +1,4 @@
-@import "@jsluna/foundation/scss/main";
+@import '@jsluna/foundation/scss/main';
 
 .app__logo {
   display: block;
@@ -10,4 +10,56 @@
 .hero {
   text-align: center;
   display: inline-block;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.product {
+  &__flex {
+    display: flex;
+    text-align: center;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 30%;
+    margin: $ln-space;
+    object-fit: contain;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+
+    background: repeating-linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+    background-size: 800% 800%;
+    color: transparent;
+    background-clip: text;
+
+    animation: rainbow 8s ease infinite;
+  }
 }
