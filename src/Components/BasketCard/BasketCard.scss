@@ -4,16 +4,19 @@
   padding: 10px;
   text-align: center;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-  &__image {
-    width: 30%;
+  &__image__column {
+    display: flex;
+    align-items: center;
+  }
 
-    align-self: center;
+  &__image {
+    width: 80%;
   }
 
   &__price {
@@ -22,6 +25,19 @@
 
     display: flex;
     flex-direction: column;
+
+    input.quantity {
+      width: 3em;
+      text-align: center;
+
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
 
     &--flash {
       color: $ln-color-red;

@@ -13,13 +13,16 @@ import formatPrice from '../../helpers/formatPrice'
 
 import './Header.scss'
 
+import { Link } from 'react-router-dom'
+
 const Header = ({
   handleSearch,
   basketItems,
   basketCost,
+  basketId,
   handleBasketOnClick,
 }) => {
-  const [searchTerm, setSearchTerm] = useState('')
+  // const [searchTerm, setSearchTerm] = useState('')
 
   // const basketQuantity =
   //   // basketItems.length > 0
@@ -42,18 +45,18 @@ const Header = ({
 
   return (
     <LunaHeader>
-      <HeaderLogo className='link' onClick={() => handleSearch('a')}>
-        Lightning Lunch
-      </HeaderLogo>
+      <Link to='/'>
+        <HeaderLogo className='link'>Lightning Lunch</HeaderLogo>
+      </Link>
       <HeaderSearch
         fullWidth
         tabBar='max-nav'
         tabBarSoft
         field={{ hasButton: true, placeholder: 'Search for products' }}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onChange={(e) => handleSearch(e.target.value)}
         onSubmit={(e) => {
           e.preventDefault()
-          handleSearch(searchTerm)
+          // setSearchTerm(e.target.value)
         }}
       />
 

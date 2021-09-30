@@ -3,24 +3,30 @@ import React, { useState, useEffect } from 'react'
 
 import Header from './Components/Header/Header'
 import Product from './Components/Products/Product'
-import ProductCard from './Components/ProductCard/ProductCard'
 import Basket from './Components/Basket/Basket'
+import Search from './Components/Search/Search'
 import Cookies from 'js-cookie'
 
-const App = () => {
-  const [view, setView] = useState('')
-  const [productList, setProductList] = useState([])
-  const [productData, setProductData] = useState(null)
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from 'react-router-dom'
 
+const MainApp = () => {
   const [basket, setBasket] = useState({
     basketId: '',
     basketItems: [],
     basketCost: 0,
   })
 
+  let history = useHistory()
+  console.log('history', history)
+
   // temporary
   useEffect(() => {
-    handleSearch('a')
+    // handleSearch('a')
     //handleProductOnClick("1320121")
 
     const oldBasketID = Cookies.get('basket_id')
@@ -42,23 +48,26 @@ const App = () => {
   }, [])
 
   const handleSearch = (searchTerm) => {
-    if (!searchTerm) return
+    history.push({ pathname: `/search/${searchTerm}` })
 
-    axios
-      .get(`http://localhost:8080/search/${searchTerm}`)
-      .then((res) => {
-        setProductList(res.data.data)
-        setView('Search')
-        console.log(res.data.data)
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    // moved
+    // axios
+    //   .get(`http://localhost:8080/search/${searchTerm}`)
+    //   .then((res) => {
+    //     setProductList(res.data.data)
+    //     // setView('Search')
+    //     console.log(res.data.data)
+    //   })
+    //   .catch((e) => {
+    //     console.log(e)
+    //   })
   }
 
   const handleBasketOnClick = () => {
     if (!basket.basketId) return
-    setView('Basket')
+    history.push({ pathname: '/basket' })
+
+    // setView('Basket')
 
     // axios
     //   .get(`http://localhost:8080/baskets/${basket.basketId}`)
@@ -73,18 +82,19 @@ const App = () => {
     //   })
   }
 
-  const handleProductOnClick = (productId) => {
-    axios
-      .get(`http://localhost:8080/products/${productId}`)
-      .then((res) => {
-        console.log(res)
-        setProductData(res.data)
-        setView('Product')
-      })
-      .catch((e) => {
-        console.log(e)
-      })
-  }
+  //moved
+  // const handleProductOnClick = (productId) => {
+  //   axios
+  //     .get(`http://localhost:8080/products/${productId}`)
+  //     .then((res) => {
+  //       console.log(res)
+  //       setProductData(res.data)
+  //       setView('Product')
+  //     })
+  //     .catch((e) => {
+  //       console.log(e)
+  //     })
+  // }
 
   const removeFromTrolleyClick = (productId, quantity = 2 ** 31) =>
     handleAddToTrolleyClick(productId, -quantity)
@@ -137,47 +147,55 @@ const App = () => {
         handleSearch={handleSearch}
         basketItems={basket.basketItems}
         basketCost={basket.basketCost}
+        basketId={basket.basketId}
         handleBasketOnClick={handleBasketOnClick}
       />
 
-      {view == 'Search' && (
-        <div className='product-list-container'>
-          {productList.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.attributes.name}
-              priceNow={product.attributes.price.now}
-              id={product.id}
-              flashText={product.attributes.price.flashText}
-              handleProductOnClick={handleProductOnClick}
+      <Switch>
+        <Route
+          path='/search/:searchTerm?'
+          render={(props) => (
+            <Search
+              searchTerm={props.match.params.searchTerm}
               handleAddToTrolleyClick={handleAddToTrolleyClick}
             />
-          ))}
-        </div>
-      )}
-
-      {view == 'Product' && (
-        <Product
-          product={productData}
-          handleAddToTrolleyClick={handleAddToTrolleyClick}
+          )}
         />
-      )}
 
-      {view == 'Basket' && (
-        <div className='basket-container'>
-          <Basket
-            basketList={basket.basketItems}
-            handleProductOnClick={handleProductOnClick}
-            removeFromTrolleyClick={removeFromTrolleyClick}
-          />
-        </div>
-      )}
+        <Route
+          path='/products/:id'
+          render={(props) => (
+            <Product
+              productId={props.match.params.id}
+              handleAddToTrolleyClick={handleAddToTrolleyClick}
+            />
+          )}
+        />
 
-      {/* {productData && <Product product={productData} /> } */}
-      {/* {<Product product="{productData}"/>}  */}
-      {/* curly braces for javascript */}
+        <Route path='/basket'>
+          <div className='basket-container'>
+            <Basket
+              basketList={basket.basketItems}
+              handleProductOnClick={() => {}}
+              removeFromTrolleyClick={removeFromTrolleyClick}
+              handleAddToTrolleyClick={handleAddToTrolleyClick}
+              basketCost={basket.basketCost}
+            />
+          </div>
+        </Route>
+
+        <Route path='/'>
+          <h1>Lightning Lunch Home</h1>
+        </Route>
+      </Switch>
     </div>
   )
 }
 
-export default App
+export default () => {
+  return (
+    <Router>
+      <MainApp />
+    </Router>
+  )
+}
