@@ -7,6 +7,9 @@ import Basket from './Components/Basket/Basket'
 import Search from './Components/Search/Search'
 import Cookies from 'js-cookie'
 
+import { Section } from '@jsluna/section'
+import { Container } from '@jsluna/grid'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -156,8 +159,10 @@ const MainApp = () => {
           path='/search/:searchTerm?'
           render={(props) => (
             <Search
+              basketList={basket.basketItems}
               searchTerm={props.match.params.searchTerm}
               handleAddToTrolleyClick={handleAddToTrolleyClick}
+              removeFromTrolleyClick={removeFromTrolleyClick}
             />
           )}
         />
@@ -168,6 +173,12 @@ const MainApp = () => {
             <Product
               productId={props.match.params.id}
               handleAddToTrolleyClick={handleAddToTrolleyClick}
+              removeFromTrolleyClick={removeFromTrolleyClick}
+              basketDetails={
+                basket.basketItems.filter(
+                  (x) => x.product.id === props.match.params.id
+                )[0]
+              }
             />
           )}
         />
@@ -185,7 +196,12 @@ const MainApp = () => {
         </Route>
 
         <Route path='/'>
-          <h1>Lightning Lunch Home</h1>
+          <Container size='xs' className='ln-u-push-top-xl'>
+            <Section>
+              <h1>Lightning Lunch Home</h1>
+              <p>Try searching for an item above.</p>
+            </Section>
+          </Container>
         </Route>
       </Switch>
     </div>

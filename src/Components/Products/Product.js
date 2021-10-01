@@ -9,6 +9,7 @@ import { Plus } from '@jsluna/icons'
 
 import './Products.scss'
 import formatPrice from '../../helpers/formatPrice'
+import BasketQuantity from '../BasketQuantity/BasketQuantity'
 
 class Product extends React.Component {
   constructor(props) {
@@ -55,19 +56,41 @@ class Product extends React.Component {
                     {product.attributes.price.flashText}
                   </p>
 
-                  {/* <FilledButton
-                onClick={() => handleAddToTrolleyClick(product.id, 1)}
-              >
-                Add to Trolley
-              </FilledButton> */}
-                  <IconButton
+                  {/* <IconButton
                     variant='filled'
                     label='Add to basket'
                     // fullWidth
                     onClick={() => handleAddToTrolleyClick(product.id, 1)}
                   >
                     <Plus />
-                  </IconButton>
+                  </IconButton> */}
+
+                  {this.props.basketDetails ? (
+                    <div className='products__flex'>
+                      <BasketQuantity
+                        id={product.id}
+                        quantity={this.props.basketDetails.quantity}
+                        handleAddToTrolleyClick={
+                          this.props.handleAddToTrolleyClick
+                        }
+                        removeFromTrolleyClick={
+                          this.props.removeFromTrolleyClick
+                        }
+                        minZero={true}
+                      />
+                    </div>
+                  ) : (
+                    <IconButton
+                      variant='filled'
+                      label='Add to basket'
+                      // fullWidth
+                      onClick={() =>
+                        this.props.handleAddToTrolleyClick(product.id, 1)
+                      }
+                    >
+                      <Plus />
+                    </IconButton>
+                  )}
                 </div>
               </div>
             </Card>

@@ -58,12 +58,21 @@ class Search extends React.Component {
                   {productList.map((product) => (
                     <ProductCard
                       key={product.id}
-                      name={product.attributes.name}
-                      priceNow={product.attributes.price.now}
-                      id={product.id}
-                      flashText={product.attributes.price.flashText}
+                      //   name={product.attributes.name}
+                      //   priceNow={product.attributes.price.now}
+                      //   id={product.id}
+                      //   flashText={product.attributes.price.flashText}
+                      basketDetails={
+                        this.props.basketList.filter(
+                          (x) => x.product.id === product.id
+                        )[0]
+                      }
+                      product={product}
                       handleProductOnClick={() => {}}
-                      handleAddToTrolleyClick={handleAddToTrolleyClick}
+                      handleAddToTrolleyClick={
+                        this.props.handleAddToTrolleyClick
+                      }
+                      removeFromTrolleyClick={this.props.removeFromTrolleyClick}
                     />
                   ))}
                 </div>

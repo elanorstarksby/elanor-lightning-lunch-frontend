@@ -6,6 +6,7 @@ import { Delete, Plus, Minus } from '@jsluna/icons'
 
 import { Link } from 'react-router-dom'
 
+import BasketQuantity from '../../Components/BasketQuantity/BasketQuantity'
 const MAX_QUANTITY = 999
 
 class BasketCard extends React.Component {
@@ -41,54 +42,14 @@ class BasketCard extends React.Component {
             <strong>Price: {formatPrice(this.props.price)}</strong>
             <div>
               <strong>Quantity:</strong>
-              <IconButton
-                label='Minus'
-                hideLabel
-                disabled={this.props.quantity <= 1}
-                onClick={() => {
-                  this.props.removeFromTrolleyClick(this.props.id, 1)
-                  this.state = { tempQuantity: null }
-                }}
-              >
-                <Minus />
-              </IconButton>
-
-              <input
-                type='number'
-                className='quantity'
-                value={
-                  this.state.tempQuantity !== null
-                    ? this.state.tempQuantity
-                    : this.props.quantity
-                }
-                onChange={(e) => {
-                  if (e.target.value === '' || e.target.value[0] === '0') {
-                    this.state = { tempQuantity: e.target.value }
-                    return
-                  }
-
-                  const target = parseInt(e.target.value)
-                  if (isNaN(target) || target < 1) return
-
-                  this.props.handleAddToTrolleyClick(
-                    this.props.id,
-                    target - this.props.quantity
-                  )
-                  this.state = { tempQuantity: null }
-                }}
-              />
-
-              <IconButton
-                label='Plus'
-                hideLabel
-                disabled={this.props.quantity >= MAX_QUANTITY}
-                onClick={() => {
-                  this.props.handleAddToTrolleyClick(this.props.id, 1)
-                  this.state = { tempQuantity: null }
-                }}
-              >
-                <Plus />
-              </IconButton>
+              {
+                <BasketQuantity
+                  id={this.props.id}
+                  quantity={this.props.quantity}
+                  removeFromTrolleyClick={this.props.removeFromTrolleyClick}
+                  handleAddToTrolleyClick={this.props.handleAddToTrolleyClick}
+                />
+              }
             </div>
             <strong>
               Total: {formatPrice(this.props.quantity * this.props.price)}

@@ -28,6 +28,12 @@
     }
   }
 
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+
   // &__button {
 
   // }

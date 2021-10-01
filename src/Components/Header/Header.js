@@ -43,6 +43,8 @@ const Header = ({
     return accumulator + current.quantity
   }, 0)
 
+  const [searchTerm, setSearchTerm] = useState(null)
+
   return (
     <LunaHeader>
       <Link to='/'>
@@ -53,10 +55,13 @@ const Header = ({
         tabBar='max-nav'
         tabBarSoft
         field={{ hasButton: true, placeholder: 'Search for products' }}
-        onChange={(e) => handleSearch(e.target.value)}
+        onChange={(e) => {
+          setSearchTerm(e.target.value)
+          handleSearch(e.target.value)
+        }}
         onSubmit={(e) => {
           e.preventDefault()
-          // setSearchTerm(e.target.value)
+          handleSearch(searchTerm)
         }}
       />
 

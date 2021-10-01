@@ -29,6 +29,7 @@
   &__flex {
     display: flex;
     text-align: center;
+    margin: auto;
 
     @media (max-width: 450px) {
       flex-direction: column;
